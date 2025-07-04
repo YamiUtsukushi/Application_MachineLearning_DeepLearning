@@ -110,15 +110,15 @@ Construire un modèle CNN pour classifier les images du dataset CIFAR-10.
 ## 📁 Arborescence du dépôt
 
 ```
-├── partie1_CNN.ipynb
-├── partie2_Tabulaires_RF.ipynb
-├── partie3_NLP_LSTM.ipynb
 ├── images/
 │ ├── capture1.png
 │ ├── capture2.png
 │ └── ...
 ├── README.md
 └── rapport.pdf
+├── partie1_CNN.ipynb
+├── partie2_Tabulaires_RF.ipynb
+├── partie3_NLP_LSTM.ipynb
 ```
 
 ---
