@@ -38,13 +38,30 @@ Construire un modèle CNN pour classifier les images du dataset CIFAR-10.
 ### ❓ Questions / Réponses Partie 1
 
 #### 1. Quel a été le rôle des callbacks ModelCheckpoint et EarlyStopping ? Ont-ils été utiles pendant votre entraînement ?
-> 
+> Un callback est une fonction qui va être appelé automatiquement à chaque époque sans qu’on est à intervenir manuellement.
+
+> Le callback ModelCheckpoint sert à récupérer le meilleur modèle à chaque passage. L’EarlyStopping lui, arrête l’apprentissage du modèle si celui-ci arrête de s’améliorer pendant un nombre d’époque donnée.
+
+> Oui les deux callbacks ont été utiles pendant l’entrainement de notre modèle, ModelCheckpoint a récupéré la meilleure version de notre modèle et EarlyStopping a stoppé l’apprentissage de notre modèle après 12 époques.
+
 
 #### 2. Analysez les courbes d'apprentissage (perte et précision). Votre modèle présente-t-il des signes de sur-apprentissage ou de sous-apprentissage ? Comment la matrice de confusion vous aide-t-elle à comprendre les erreurs du modèle ?
-> 
+> Oui on aperçoit des signes de sur-apprentissage, le modèle est très bon sur les données d’entraînement, la précision augmente au fil des époques. Cependant pour les données de validation, on voit qu’à partir de l’époque 3, notre modèle commence à stagner.
+
+> Sur le graph de perte, on voit que le modèle réduit bien l’erreur des données d’entraînement mais il y a de plus en plus sur les données de validations.
+
+> On comprend que le modèle apprend et mémorise très bien sur les données d’entrainement mais a du mal sur les données inconnues ce qui serait un signe de sur-apprentissage.
+
+> La matrice de confusion va nous permettre de savoir où le modèle se trompe entre les prédictions correctes et les erreurs de classification. On peut voir que les bonnes prédictions de notre modèle sur la ligne en diagonale. 
+
+> Le modèle a beaucoup confondu chien/chat, cheval/cerf, camion/voiture il a du mal à différencier les éléments qui se ressemble.
+
 
 #### 3. Quels ont été les principaux défis rencontrés ? Comment pourriez-vous améliorer les performances de ce premier modèle ?
-> 
+> La compréhension des paramètres lors de la création du modèle était le défi principal
+
+> Pour améliorer notre modèle, on pourrait lui donner plus de données sur les classes mal reconnues et plus de variations sur ses images. Ajouter plus de couches de neurones et améliorer les hyperparamètres du modèle (nombre de filtre, learning_rate etc).
+
 
 #### 4. Comparez les performances (précision, temps d'entraînement) du modèle simple et du modèle basé sur le transfert d'apprentissage. Pourquoi observe-t-on une telle différence ?
 > 
