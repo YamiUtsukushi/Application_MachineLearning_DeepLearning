@@ -148,6 +148,23 @@ ML_DL/
 ├── README.md
 ```
 
+### 📂 Modèles Enregistrés
+
+| Fichier                         | Description                                                              |
+|--------------------------------|--------------------------------------------------------------------------|
+| `best_cnn_model.keras`         | Modèle CNN entraîné sur CIFAR-10 (Partie 1)                              |
+| `best_transfer_model.keras`    | Modèle MobileNetV2 (Transfer Learning) entraîné sur CIFAR-10 (Partie 1) |
+| `best_model_nlp.keras`         | Modèle LSTM bidirectionnel pour la catégorisation de texte (Partie 3)   |
+| `temp_model.keras`             | Modèle temporaire utilisé lors des tests d’hyperparamètres (Partie 1.3.9)|
+
+### 📚 Datasets utilisés
+
+| Dataset                             | Description                                                    | Lien source                                                                 |
+|------------------------------------|----------------------------------------------------------------|------------------------------------------------------------------------------|
+| `CIFAR-10` *(chargé via TF)*        | Images couleurs 32x32 réparties en 10 classes (Partie 1 – CNN) | [TensorFlow – CIFAR-10](https://www.tensorflow.org/datasets/catalog/cifar10) |
+| `creditcard.csv` *(non inclus)*     | Données bancaires anonymisées pour la détection de fraude      | [Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) |
+| `personal_expense_classification.csv` | Descriptions de transactions avec catégories (Partie 3 – NLP)   | [Kaggle – Personal Expense Classification](https://www.kaggle.com/datasets/imakash3011/personal-expense-classification) |
+
 ---
 
 ## ✉️ Auteurs
