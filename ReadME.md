@@ -30,7 +30,7 @@ Construire un modèle CNN pour classifier les images du dataset CIFAR-10.
 5. **TensorBoard** *(optionnel)*  
 ![Capture 5](./images/capture5.png)
 
-6. **Tableau de test d’hyperparamètres** *(si implémenté)*  
+6. **Tableau de test d’hyperparamètres** *(On n'a pas encore fait les tests)*  
 ![Capture 6](./images/capture6.png)
 
 ---
