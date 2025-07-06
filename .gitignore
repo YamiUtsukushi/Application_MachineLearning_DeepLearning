@@ -1,0 +1,27 @@
+creditcard.csv
+temp_model.keras
+personal_expense_classification.csv
+
+# Fichiers de modèles entraînés
+*.keras
+*.h5
+
+# Fichiers temporaires de Jupyter
+.ipynb_checkpoints/
+
+# Dossiers de logs (TensorBoard, etc.)
+logs/
+
+# Captures et images lourdes (si tu ne veux pas les versionner)
+images/
+
+# Fichiers CSV (datasets — à ignorer si déjà sur Kaggle ou dispo ailleurs)
+*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Fichier de notebook temporaire
+*.swp
